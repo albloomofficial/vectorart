@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "935a07fca66ef20ced3be17284877d759186797e753d6df72e81e5e8e03c4c41"
+            "sha256": "f95050585fbb3a1eacbbf72168a819465db23122b782092e4af57059cf9ee57b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -250,6 +250,13 @@
                 "sha256:d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
             ],
             "version": "==1.12.0"
+        },
+        "svg-path": {
+            "hashes": [
+                "sha256:a4ef1da33f6dffc57f17cef1cbc674991fd2fd9d3c472e36f9c1e34ee5d63f01"
+            ],
+            "index": "pypi",
+            "version": "==3.0"
         },
         "tinycss2": {
             "hashes": [
