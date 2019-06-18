@@ -64,44 +64,6 @@ while counter < 20:
     xcord = nextX
     ycord = nextY
     offspring_random = random.random()
-    if offspring_random > 0.2:
-        branches = create_offspring()
-        for branch in range(branches):
-            nextXchild = random.random()*(1.5**counter)*negative_random()
-            nextYchild = random.random()*(1.5**counter)*negative_random()
-            d.append(draw.Lines(xcord,ycord,nextXchild,nextYchild,
-            stroke_width = random.random()*3,
-            stroke = 'green',
-            stroke_opacity = 0.7,
-            fill = 'green',
-            fill_opacity = random.random()))
-            random_length = random.randint(2,6)
-            grand_fibanocci = fibanocci
-            grand_counter = random.randint(0,3)
-            grand_i = grand_counter
-            xcordchild = nextXchild
-            ycordchild = nextYchild
-            for little_one in range(random_length):
-                nextXgrand = (grand_i*grand_fibanocci[grand_i]*xaxisfibanocci(grand_i))*random.randint(100,1000)*random.random()
-                nextYgrand = (grand_i*grand_fibanocci[grand_i]*yaxisfibanocci(grand_i))*random.randint(100,1000)*random.random()
-                d.append(draw.Lines(xcordchild,
-                                    ycordchild,
-                                    nextXgrand,
-                                    nextYgrand,
-                                    stroke_width = 4,
-                                    stroke = 'black',
-                                    stroke_opacity = 0.25,
-                                    fill = 'black',
-                                    fill_opacity = 1
-                                    ))
-                distance = ((nextXgrand-xcordchild)**2+(nextYgrand-ycordchild**2))**(1.0/2)
-                print(distance)
-                xcordchild = nextXgrand
-                ycordchild = nextYgrand
-                grand_counter +=1
-                grand_i += 1
-                if grand_i > 3:
-                    grand_i = 0
 
 
 d.savePng('example.png')
